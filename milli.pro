@@ -2,15 +2,14 @@ TEMPLATE = app
 CONFIG += console
 CONFIG -= app_bundle
 CONFIG -= qt
-
 QMAKE_CXXFLAGS += -march=native -pipe -std=c++17
 
 HEADERS += \
-	editor.h
+	src/editor.h
 
 SOURCES += \
-        editor.cpp \
-        main.cpp
+        src/editor.cpp \
+        src/main.cpp
 
 unix|win32: LIBS += -lncursesw
 
